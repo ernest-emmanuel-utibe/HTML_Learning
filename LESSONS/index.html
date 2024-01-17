@@ -11,85 +11,110 @@
 </head>
 
 <body>
-    <h1>My Goals for the Year!</h1>
+    <header>
+        <h1>My Goals for the Year!</h1>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <hr>
-    <nav>
-        <ul>
-            <li>
-                <a href="#html">Learning HTML</a>
-            </li>
-
-            <li>
-                <a href="#vacation">Planning a Vacation</a>
-            </li>
-        </ul>
-    </nav>
-
-    <hr>
-    <section id="html">
+    <main>
+    <article id="html">
 
     <h2>I'm ready to learn HTML.</h2>
     <p>This is my first web page</p>
+    <section>
+        <h3>HTML5</h3>
+        <img src="images/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+        <figure>
+            <figcaption>An Example of HTML5 code</figcaption>
+            <p>
+                <code>
+                    &lt;h1&gt;Hello World!&lt;/h1&gt;
+                </code>
+            </p>
+        </figure>
+    </section>
 
     <h3>My Daily Schedule</h3>
     <p>Let me tell you how:</p>
         <ol>
-        <li>...I  learn more about dev.</li>
-        <li>...I plan out my schedule.</li>
-        <li>...I use resources from <abbr title="Mozilla Developer Network">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN.</a>
-        </abbr>.</li>
-    </ol>
-</section>
+            <li>...I  learn more about dev.</li>
+            <li>...I plan out my schedule.</li>
+            <li>...I use resources from <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN.</a>
+            </abbr>.</li>
+        </ol>
+    </article>
 
     <hr>
 
-    <section id="vacation">
+    <article id="vacation">
 
-    <h2>I am also planning a vacation.</h2>
-    <p>I've been working hard and <em>really need a getaway.</em>.</p>
-    <p>I live in <abbr title="NIgeria">NIG</abbr> so I want to visit a beach in the Bahamas.</p>
+        <h2>I am also planning a vacation.</h2>
+        <p>I've been working hard and <em>really need a getaway.</em>.</p>
+        <p>I live in <abbr title="NIgeria">NIG</abbr> so I want to visit a beach in the Bahamas.</p>
 
-    <h3>Places I'd like to visit</h3>
+        <h3>Places I'd like to visit</h3>
 
-    <ul>
+        <ul>
+            <li><p>I've heard good things about the Caribbean.</p></li>
+            <figure>
+            <img src="images/caribbean.jpg" alt="Caribbean Beach" title="I want to visit a Caribbean beach" width="400" height="225" loading="lazy">
+            <figcaption>
+                Caribbean Beach getaway
+            </figcaption>
+            </figure>
+                <li><p>I've heard good things about going here:</p>
+                <address>
+                    <strong>Bahamas</strong><br>
+                    <a href="https://en.wikipedia.org/wiki/Bahamas">Bahamas</a><br><br>
+                    <a href="https://www.trivago.com/en-US/srl?themeId=2&search=200-32189&sem_keyword=accommodation%20cancun&sem_creativeid=75729024956314&sem_matchtype=bp&sem_network=o&sem_device=c&sem_campaignid=367052490&sem_adgroupid=1211662189503316&sem_targetid=kwd-75729245716944:loc-137&cipc=sem&cip=9982901407&msclkid=f7e6e9a6177e102f5d6f8c3b4219317d">Trivago</a>
+                    Margaritaville Island Reserve Riviera Cancun<br>
+                    Bahia Petempich Puerto Morelos, Mexico<br>
+                    Colonia Morelos, Mexico 77580
+                </address>
+            <figure>
+                <img src="images/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'clock somewhere" loading="lazy" width="400" height="267">
+                <figcaption>
+                    A Caribbean Vacation Image
+                </figcaption>
+            </figure>
+            </li>
+        </ul>
 
-    <li><p>I've heard good things about the Caribbean.</p></li>
-    <li><p>I've heard good things about going here:</p>
-    <address>
-        <strong>Bahamas</strong><br>
-        <a href="https://en.wikipedia.org/wiki/Bahamas">https://en.wikipedia.org/wiki/Bahamas</a><br><br>
-        <a href="https://www.trivago.com/en-US/srl?themeId=2&search=200-32189&sem_keyword=accommodation%20cancun&sem_creativeid=75729024956314&sem_matchtype=bp&sem_network=o&sem_device=c&sem_campaignid=367052490&sem_adgroupid=1211662189503316&sem_targetid=kwd-75729245716944:loc-137&cipc=sem&cip=9982901407&msclkid=f7e6e9a6177e102f5d6f8c3b4219317d">
-            https://www.trivago.com/en-US/srl?themeId=2&search=200-32189&sem_keyword=accommodation%20cancun&sem_creativeid=75729024956314&sem_matchtype=bp&sem_network=o&sem_device=c&sem_campaignid=367052490&sem_adgroupid=1211662189503316&sem_targetid=kwd-75729245716944:loc-137&cipc=sem&cip=9982901407&msclkid=f7e6e9a6177e102f5d6f8c3b4219317d
-        </a>
-        Margaritaville Island Reserve Riviera Cancun<br>
-        Bahia Petempich Puerto Morelos, Mexico<br>
-        Colonia Morelos, Mexico 77580
-    </address>
-</li>
-</ul>
+            <h3>Places I want to avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this place is <strong>cold.</strong></dd>
 
-    <h3>Places I want to avoid</h3>
-    <dl>
-        <dt>North Pole</dt>
-        <dd>I hear this place is <strong>cold.</strong></dd>
+                    <dt>South Pole</dt>
+                    <dd>This also is cold.</dd>
 
-        <dt>South Pole</dt>
-        <dd>This also is cold.</dd>
+                    <dt>Mountain Tops</dt>
+                    <dd>I don't like mountains.</dd>
+                </dl>
 
-        <dt>Mountain Tops</dt>
-        <dd>I don't like mountains.</dd>
-    </dl>
+    </article>
+    </main>
 
-</section>
+    <footer>
+        <p>&lt;&lt;&lt;<b>&copy;</b> <a href="about.html"><strong><b>ERNEST EMMANUEL UTIBE</b></strong></a> &gt;&gt;&gt;
+        </p>
 
-    <hr>
-    &lt;&lt;&lt;<b>&copy;</b> <a href="about.html"><strong><b>ERNEST EMMANUEL UTIBE</b></strong></a> &gt;&gt;&gt;
-
-
-    <p>
-        <a href="#">Back to Top.</a>
-    </p>
+        <p>
+            <a href="#">Back to Top.</a>
+        </p>
+    </footer>
 </body>
 </html>
