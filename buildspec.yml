@@ -12,4 +12,4 @@ phases:
       - echo "Building static files..."
   post_build:
     commands:
-      - aws s3 sync ./dist s3://testingernestbucket/
+      - aws s3 sync ./build s3://testingernestbucket/
